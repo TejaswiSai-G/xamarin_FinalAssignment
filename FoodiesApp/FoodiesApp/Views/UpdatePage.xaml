@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FoodiesApp.UpdatePage">
+    <ContentPage.Content>
+         <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+            <Label Text="Update Restaurant" FontSize="30"  FontAttributes="Bold" TextColor="Green"></Label>
+            <Grid Margin="0,20,0,0" RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Label Text="Restaurant ID: (Non editable)" FontSize="16"></Label>
+                    <Entry x:Name="id" Placeholder="ID" FontSize="18" Text="{Binding id}" IsReadOnly="True"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Label Text="Restarunt Name:" FontSize="16"></Label>
+                    <Entry x:Name="displayName" Placeholder="Change name here" FontSize="18" Text="{Binding displayName}"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"
+                           IsSpellCheckEnabled="false"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <Label Text="Restarunt Address:" FontSize="16"></Label>
+                    <Editor x:Name="address" Placeholder="Change address here" FontSize="18" Text="{Binding address}"
+                            HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"
+                            IsSpellCheckEnabled="false"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3">
+                    <Label Text="Price For Two:" FontSize="16"></Label>
+                    <Entry x:Name="priceForTwo" FontSize="18" Placeholder="Change price here" Text="{Binding priceForTwo}" Keyboard="Numeric"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <StackLayout Grid.Row="4">
+                    <Label Text="Admin ID: (Non editable)" FontSize="16"></Label>
+                    <Entry x:Name="adminId" Placeholder="Admin ID" FontSize="18" Text="{Binding adminId}" IsReadOnly="True"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Button Grid.Row="5" Text="Update Now" Command="{Binding UpdateCommand}" BackgroundColor="Green" TextColor="White" FontAttributes="Bold"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

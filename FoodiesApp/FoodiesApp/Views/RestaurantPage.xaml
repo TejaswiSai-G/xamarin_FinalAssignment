@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FoodiesApp.RestaurantPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Padding="15">
+            <Label x:Name="Name" Text="{Binding Name}" FontAttributes="Bold" TextColor="Green"></Label>
+            <Label x:Name="Address" Text="{Binding Address}" TextColor="Green"></Label>
+            <ListView x:Name="listView" ItemTapped="OnItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding foodName}" ></Label>
+                                <StackLayout HorizontalOptions="EndAndExpand">
+                                    <Label Text="{Binding price}" ></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                        <!--<TextCell TextColor="Black" Text="{Binding foodName}" Detail="{Binding price}"></TextCell>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <StackLayout x:Name="isAdminLayout" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20">
+                <Button Text="Edit Restaurant" Clicked="EditRestaurant"
+                        BackgroundColor="Green" TextColor="White"
+                        FontAttributes="Bold" Padding="10"></Button>
+                <Button Text="Delete Restaurant" Clicked="DeleteRestaurant"
+                        BackgroundColor="Red" TextColor="White"
+                        FontAttributes="Bold" Padding="10"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
