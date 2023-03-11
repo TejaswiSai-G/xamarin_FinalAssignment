@@ -7,6 +7,7 @@ namespace FoodiesApp
 {
     public partial class RegisterPage : ContentPage
     {
+        //MapPage mapPage = new MapPage();
         public RegisterPage(int AdminID)
         {
             InitializeComponent();

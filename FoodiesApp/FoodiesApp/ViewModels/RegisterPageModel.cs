@@ -88,8 +88,13 @@ namespace FoodiesApp
 
         private async void OpenMap()
         {
-            await App.Current.MainPage.DisplayAlert("MAP", "MAP!", "OK");
-            //await App.Current.MainPage.Navigation.PushAsync(new MapPage());
+            var page = new MapPage();
+            page.mapAddress += Page_mapAddress;
+            await App.Current.MainPage.Navigation.PushAsync(page);
+        }
+        private void Page_mapAddress(object sender, string e)
+        {
+            address = e;
         }
 
         public Command RegisterCommand { get; }

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" 
+    x:Class="FoodiesApp.MapPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+                <Label Text="Select your Location" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <maps:Map x:Name="mapView" IsShowingUser="True" MapClicked="Map_MapClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

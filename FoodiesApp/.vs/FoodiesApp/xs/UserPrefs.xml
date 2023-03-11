@@ -1,36 +1,39 @@
 ﻿<Properties StartupConfiguration="{5076AA04-C347-4FB3-8FC7-B31659E9F092}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FoodiesApp/ViewModels/RegisterPageModel.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="FoodiesApp/App.xaml.cs" Line="13" Column="60" IsPinned="True" />
-      <File FileName="FoodiesApp/Views/RegisterPage.xaml" />
-      <File FileName="FoodiesApp/Views/RegisterPage.xaml.cs" />
-      <File FileName="FoodiesApp/ViewModels/RegisterPageModel.cs" Line="100" Column="1" />
+      <File FileName="FoodiesApp/ViewModels/RegisterPageModel.cs" Line="100" Column="48" />
+      <File FileName="FoodiesApp/Views/MapPage.xaml.cs" Line="13" Column="71" />
+      <File FileName="FoodiesApp/Views/RegisterPage.xaml.cs" Line="17" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FoodiesApp" expanded="True">
             <Node name="FoodiesApp" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
               <Node name="ViewModels" expanded="True">
                 <Node name="RegisterPageModel.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" />
+                <Node name="MapPage.xaml" expanded="True" />
                 <Node name="RegisterPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="FoodiesApp.Android" expanded="True" />
+            <Node name="FoodiesApp.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
             <Node name="FoodiesApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FoodiesApp.Android PreferredExecutionTarget="Android.nexus_5x_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.ItemProperties.FoodiesApp.Android AndroidDesignerPreferredTheme="MainTheme" PreferredExecutionTarget="Android.nexus_5x_q_10_0_-_api_29" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FoodiesApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6025B020-F6AC-41EB-B0E1-22D467F5F9F4" />
+  <MonoDevelop.Ide.ItemProperties.FoodiesApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6025B020-F6AC-41EB-B0E1-22D467F5F9F4" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
